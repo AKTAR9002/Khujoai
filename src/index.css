@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Hind Siliguri', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Hind Siliguri', 'Syne', 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.khujo-ambient-bg {
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(at 15% 10%, rgba(59, 130, 246, 0.07) 0px, transparent 50%),
+    radial-gradient(at 85% 12%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 45%, rgba(99, 102, 241, 0.04) 0px, transparent 60%);
+}
+
+.khujo-search-glow {
+  box-shadow: 0 10px 40px -10px rgba(79, 70, 229, 0.12), 0 4px 16px -4px rgba(59, 130, 246, 0.08);
+}
+
+.khujo-search-glow:focus-within {
+  box-shadow: 0 14px 48px -8px rgba(79, 70, 229, 0.22), 0 4px 20px -4px rgba(59, 130, 246, 0.14);
+}

@@ -1,0 +1,8 @@
+{
+  "name": "KHUJO AI",
+  "description": "A premium, intuitive AI search engine providing clear, accurate answers in your own language.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
